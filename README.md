@@ -106,7 +106,7 @@ Elastic icons are multi-color.
 
 It's useful to identify Elastic sprites by color (versus e.g. AWS sprites) e.g.
 * Elastic Green Background with Black Foreground
-* Elastic Green Foreground with While Background
+* Elastic Green Foreground with White Background
 
 I opted for the latter as it looked better.
 
