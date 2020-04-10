@@ -104,8 +104,8 @@ sprite $enterprise_search [100x100/16] {
 
 
 
-!define ENTERPRISE_SEARCH(alias) PUML_ENTITY(component,black,enterprise_search,alias,enterprise search)
+!define ENTERPRISE_SEARCH(alias) PUML_ENTITY(component,00BFB3,enterprise_search,alias,enterprise search)
 
-!definelong ENTERPRISE_SEARCH(alias,label,e_type="component",e_color="black",e_stereo="enterprise search",e_sprite="enterprise_search")
+!definelong ENTERPRISE_SEARCH(alias,label,e_type="component",e_color="00BFB3",e_stereo="enterprise search",e_sprite="enterprise_search")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

@@ -104,8 +104,8 @@ sprite $maps [100x100/16] {
 
 
 
-!define MAPS(alias) PUML_ENTITY(component,black,maps,alias,maps)
+!define MAPS(alias) PUML_ENTITY(component,00BFB3,maps,alias,maps)
 
-!definelong MAPS(alias,label,e_type="component",e_color="black",e_stereo="maps",e_sprite="maps")
+!definelong MAPS(alias,label,e_type="component",e_color="00BFB3",e_stereo="maps",e_sprite="maps")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

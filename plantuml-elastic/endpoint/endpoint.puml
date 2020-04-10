@@ -104,8 +104,8 @@ sprite $endpoint [100x100/16] {
 
 
 
-!define ENDPOINT(alias) PUML_ENTITY(component,black,endpoint,alias,endpoint)
+!define ENDPOINT(alias) PUML_ENTITY(component,00BFB3,endpoint,alias,endpoint)
 
-!definelong ENDPOINT(alias,label,e_type="component",e_color="black",e_stereo="endpoint",e_sprite="endpoint")
+!definelong ENDPOINT(alias,label,e_type="component",e_color="00BFB3",e_stereo="endpoint",e_sprite="endpoint")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

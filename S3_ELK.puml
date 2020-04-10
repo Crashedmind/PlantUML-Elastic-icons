@@ -69,14 +69,15 @@ skinparam componentBackgroundColor White
 'To change background color to elastic green
 'skinparam componentBackgroundColor 00BFB3 
 
+
 AMAZONS3(s3_bucket,"Logs uploaded to here")
-AMAZONGLACIER(Archive, "Archive")
+
 
 KIBANA(Kibana, "Visualize") 
 LOGSTASH(Logstash, "Parse and Transform")
 ELASTIC_SEARCH(ElasticSearch, "Search and Analyze")
 
-s3_bucket -right-> Archive: Archive logs
+
 s3_bucket -down-> Logstash: Raw logs
 Logstash -right-> ElasticSearch: Transformed Data
 ElasticSearch -right-> Kibana: Data to View

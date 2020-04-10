@@ -104,8 +104,8 @@ sprite $cloud_in_kubernetes [100x100/16] {
 
 
 
-!define CLOUD_IN_KUBERNETES(alias) PUML_ENTITY(component,black,cloud_in_kubernetes,alias,cloud in kubernetes)
+!define CLOUD_IN_KUBERNETES(alias) PUML_ENTITY(component,00BFB3,cloud_in_kubernetes,alias,cloud in kubernetes)
 
-!definelong CLOUD_IN_KUBERNETES(alias,label,e_type="component",e_color="black",e_stereo="cloud in kubernetes",e_sprite="cloud_in_kubernetes")
+!definelong CLOUD_IN_KUBERNETES(alias,label,e_type="component",e_color="00BFB3",e_stereo="cloud in kubernetes",e_sprite="cloud_in_kubernetes")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

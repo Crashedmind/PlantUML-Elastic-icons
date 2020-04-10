@@ -104,8 +104,8 @@ sprite $ece [100x100/16] {
 
 
 
-!define ECE(alias) PUML_ENTITY(component,black,ece,alias,ece)
+!define ECE(alias) PUML_ENTITY(component,00BFB3,ece,alias,ece)
 
-!definelong ECE(alias,label,e_type="component",e_color="black",e_stereo="ece",e_sprite="ece")
+!definelong ECE(alias,label,e_type="component",e_color="00BFB3",e_stereo="ece",e_sprite="ece")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

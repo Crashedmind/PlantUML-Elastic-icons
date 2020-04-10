@@ -104,8 +104,8 @@ sprite $uptime [100x100/16] {
 
 
 
-!define UPTIME(alias) PUML_ENTITY(component,black,uptime,alias,uptime)
+!define UPTIME(alias) PUML_ENTITY(component,00BFB3,uptime,alias,uptime)
 
-!definelong UPTIME(alias,label,e_type="component",e_color="black",e_stereo="uptime",e_sprite="uptime")
+!definelong UPTIME(alias,label,e_type="component",e_color="00BFB3",e_stereo="uptime",e_sprite="uptime")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
