@@ -1,13 +1,28 @@
 # PlantUML  Elastic Icons
-Icons from [elastic](www.elastic.co) for use with PlantUML:
+Sprites from [elastic](www.elastic.co) for use with PlantUML:
 1. here to share with kind permission from the nice guys at Elastic community team. Thanks to Max, David, Phillip for prompt feedback!
-2. original icons in svg format from Elastic [here](https://www.elastic.co/brand) 
+2. original logos in svg format from Elastic [here](https://www.elastic.co/brand). See the [Interesting Elastic story behind these icons](https://www.elastic.co/blog/redesigning-product-logos-and-icons-while-building-a-design-hierarchy-at-elastic).
 
 
-## QuickStart
+## Demo
 
+![](examples/S3_ELK.png)
 
+PlantUML source extract that creates this diagram. 
+See full source ./S3_ELK.puml
 
+````
+AMAZONS3(s3_bucket,"Logs uploaded to here")
+
+KIBANA(Kibana, "Visualize") 
+LOGSTASH(Logstash, "Parse and Transform")
+ELASTIC_SEARCH(ElasticSearch, "Search and Analyze")
+
+s3_bucket -down-> Logstash: Raw logs
+Logstash -right-> ElasticSearch: Transformed Data
+ElasticSearch -right-> Kibana: Data to View
+
+````
 
 
 
@@ -24,6 +39,9 @@ Plantuml sprites for creating diagrams with Elastic components.
 # Converting the icon set to PlantUML Sprites
 
 ```
+# Need: Git, Python3, ImageMagick Convert
+
+# Get the scripts that do the hard work
 git clone git@github.com:Crashedmind/PlantUML-Elastic-icons.git
 
 # Setup a temporary directory to work in
@@ -33,7 +51,7 @@ cd tmp/
 # Download and unzip the svg icons from elastic.co
 ./get_elastic_logos.sh
 
-# Convert the svg icons in color folder to 100x100 png
+# Convert the svg icons in color folder to 100x100 png in png folder
 cd color
 ../../svg2png.sh
 ls ./png/
@@ -68,9 +86,3 @@ logo-elastic-search-color-64.svg
 ````
         <path d="M47.7246,44.293 L47.7276,44.299 C42.7746,50.227 35.3286,54.001 26.9996,54.001 C16.4006,54.001 7.2326,47.889 2.8136,39.001 L38.0056,39.001 C40.5306,39.001 42.9886,39.871 44.9206,41.497 C45.9246,42.342 46.8636,43.262 47.7246,44.293" id="Fill-6" fill="#00BFB3"></path>
 ````
-
-https://forum.plantuml.net/8798/change-color-of-sprite
-<&x{scale=2.25,color=#FF0000}> someBadField
- <$star{scale=0.50,color=#FF0000}> other
- <&x*2.25,color=green> someBadField
- <$star*0.50,color=blue> other
