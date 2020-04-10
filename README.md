@@ -30,7 +30,34 @@ ElasticSearch -right-> Kibana: Data to View
 
 ![](examples/All.png)
 
+PlantUML source extract that creates this diagram. 
 See full source ./All.puml
+
+````
+skinparam componentBackgroundColor White 
+
+APM(apm)
+APP_SEARCH(app_search)
+BEATS(beats)
+CLOUD(cloud)
+CLOUD_IN_KUBERNETES(cloud_in_kubernetes)
+CODE_SEARCH(code_search)
+ECE(ece)
+ECK(eck)
+ELASTIC_SEARCH(elastic_search)
+ENDPOINT(endpoint)
+ENTERPRISE_SEARCH(enterprise_search)
+KIBANA(kibana)
+LOGGING(logging)
+LOGSTASH(logstash)
+MAPS(maps)
+METRICS(metrics)
+SIEM(siem)
+SITE_SEARCH(site_search)
+STACK(stack)
+UPTIME(uptime)
+
+````
 
 
 
