@@ -1,6 +1,6 @@
 # PlantUML  Elastic Sprites
-Sprites from [elastic](www.elastic.co) for use with PlantUML:
-1. here to share with kind permission from the nice guys at Elastic community team. Thanks to Max, David, Phillip for prompt feedback!
+Sprites from [Elastic](https://www.elastic.co) for use with PlantUML:
+1. here to share with kind permission from the nice guys at Elastic community team. Thanks to Max, David, Philipp for prompt feedback!
 2. original logos in svg format from Elastic [here](https://www.elastic.co/brand). See the [Interesting Elastic story behind these icons](https://www.elastic.co/blog/redesigning-product-logos-and-icons-while-building-a-design-hierarchy-at-elastic).
 
 
