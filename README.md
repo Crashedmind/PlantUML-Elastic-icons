@@ -132,12 +132,11 @@ mv  ./dist/elastic ../../plantuml-elastic
 # Sprite Background Shape
 
 Plantuml allows setting each sprite background shape
-* default. Default set to agent for the Elastic icons which is a square.
+* default. Default set to "agent" for the Elastic icons which is a square.
 * when we use it by adding a third parameter e.g. "node" per KIBANA(Kibana, "Visualize",node) 
 
 This is done using the [Plantuml Deployment Diagram definitions](https://plantuml.com/deployment-diagram) where the list of options is defined.
 
-The 
 
 # Sprite Colors
 Sprites are monochrome per https://plantuml.com/sprite.
