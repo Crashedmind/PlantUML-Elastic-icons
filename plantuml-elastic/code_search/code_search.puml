@@ -104,8 +104,8 @@ sprite $code_search [100x100/16] {
 
 
 
-!define CODE_SEARCH(alias) PUML_ENTITY(component,00BFB3,code_search,alias,code search)
+!define CODE_SEARCH(alias) PUML_ENTITY(agent,00BFB3,code_search,alias,code search)
 
-!definelong CODE_SEARCH(alias,label,e_type="component",e_color="00BFB3",e_stereo="code search",e_sprite="code_search")
+!definelong CODE_SEARCH(alias,label,e_type="agent",e_color="00BFB3",e_stereo="code search",e_sprite="code_search")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

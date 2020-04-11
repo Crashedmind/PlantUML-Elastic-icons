@@ -104,8 +104,8 @@ sprite $siem [100x100/16] {
 
 
 
-!define SIEM(alias) PUML_ENTITY(component,00BFB3,siem,alias,siem)
+!define SIEM(alias) PUML_ENTITY(agent,00BFB3,siem,alias,siem)
 
-!definelong SIEM(alias,label,e_type="component",e_color="00BFB3",e_stereo="siem",e_sprite="siem")
+!definelong SIEM(alias,label,e_type="agent",e_color="00BFB3",e_stereo="siem",e_sprite="siem")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

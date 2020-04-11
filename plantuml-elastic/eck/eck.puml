@@ -104,8 +104,8 @@ sprite $eck [100x100/16] {
 
 
 
-!define ECK(alias) PUML_ENTITY(component,00BFB3,eck,alias,eck)
+!define ECK(alias) PUML_ENTITY(agent,00BFB3,eck,alias,eck)
 
-!definelong ECK(alias,label,e_type="component",e_color="00BFB3",e_stereo="eck",e_sprite="eck")
+!definelong ECK(alias,label,e_type="agent",e_color="00BFB3",e_stereo="eck",e_sprite="eck")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

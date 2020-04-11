@@ -104,8 +104,8 @@ sprite $stack [100x100/16] {
 
 
 
-!define STACK(alias) PUML_ENTITY(component,00BFB3,stack,alias,stack)
+!define STACK(alias) PUML_ENTITY(agent,00BFB3,stack,alias,stack)
 
-!definelong STACK(alias,label,e_type="component",e_color="00BFB3",e_stereo="stack",e_sprite="stack")
+!definelong STACK(alias,label,e_type="agent",e_color="00BFB3",e_stereo="stack",e_sprite="stack")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

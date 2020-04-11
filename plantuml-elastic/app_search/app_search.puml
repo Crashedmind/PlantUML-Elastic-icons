@@ -104,8 +104,8 @@ sprite $app_search [100x100/16] {
 
 
 
-!define APP_SEARCH(alias) PUML_ENTITY(component,00BFB3,app_search,alias,app search)
+!define APP_SEARCH(alias) PUML_ENTITY(agent,00BFB3,app_search,alias,app search)
 
-!definelong APP_SEARCH(alias,label,e_type="component",e_color="00BFB3",e_stereo="app search",e_sprite="app_search")
+!definelong APP_SEARCH(alias,label,e_type="agent",e_color="00BFB3",e_stereo="app search",e_sprite="app_search")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

@@ -104,8 +104,8 @@ sprite $metrics [100x100/16] {
 
 
 
-!define METRICS(alias) PUML_ENTITY(component,00BFB3,metrics,alias,metrics)
+!define METRICS(alias) PUML_ENTITY(agent,00BFB3,metrics,alias,metrics)
 
-!definelong METRICS(alias,label,e_type="component",e_color="00BFB3",e_stereo="metrics",e_sprite="metrics")
+!definelong METRICS(alias,label,e_type="agent",e_color="00BFB3",e_stereo="metrics",e_sprite="metrics")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

@@ -64,23 +64,51 @@
 !include ELASTIC_PUML/uptime/uptime.puml
 
 
-
+'change color of selected background shape https://plantuml.com/deployment-diagram
+skinparam actorBackgroundColor White 
 skinparam agentBackgroundColor White 
+skinparam artifactBackgroundColor White 
+skinparam boundaryBackgroundColor White 
+skinparam cardBackgroundColor White 
+skinparam cloudBackgroundColor White 
+skinparam componentBackgroundColor White 
+skinparam controlBackgroundColor White 
+skinparam databaseBackgroundColor White 
+skinparam entityBackgroundColor White 
+skinparam fileBackgroundColor White 
+skinparam folderBackgroundColor White 
+skinparam frameBackgroundColor White 
+skinparam interfaceBackgroundColor White 
+skinparam nodeBackgroundColor White 
+skinparam packageBackgroundColor White 
+skinparam queueBackgroundColor White 
+skinparam stackBackgroundColor White 
+skinparam rectangleBackgroundColor White 
+skinparam storageBackgroundColor White 
+skinparam usecaseBackgroundColor White 
+
+
+
 'To change background color to elastic green
-'skinparam agentBackgroundColor 00BFB3 
+'skinparam componentBackgroundColor 00BFB3 
 
+AWSCLOUD(aws) {
 
-AMAZONS3(s3_bucket,"Logs uploaded to here")
+    AMAZONS3(s3_bucket,"Logs uploaded to here")
 
+package Elastic {
 
-KIBANA(Kibana, "Visualize") 
-LOGSTASH(Logstash, "Parse and Transform")
-ELASTIC_SEARCH(ElasticSearch, "Search and Analyze")
+    'add "node", "component", "agent" etc... to change background shape per https://plantuml.com/deployment-diagram
+    'default is agent 
+    ELASTIC_SEARCH(ElasticSearch, "Search and Analyze",database)
+    LOGSTASH(Logstash, "Parse and Transform",node)
+    KIBANA(Kibana, "Visualize",agent) 
+}
 
+    s3_bucket -down-> Logstash: Raw logs
+    Logstash -right-> ElasticSearch: Transformed Data
+    ElasticSearch -right-> Kibana: Data to View
 
-s3_bucket -down-> Logstash: Raw logs
-Logstash -right-> ElasticSearch: Transformed Data
-ElasticSearch -right-> Kibana: Data to View
-
+}
 
 @enduml

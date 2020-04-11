@@ -27,7 +27,7 @@
 !include ELASTIC_PUML/stack/stack.puml
 !include ELASTIC_PUML/uptime/uptime.puml
 
-skinparam componentBackgroundColor White 
+skinparam agentBackgroundColor White 
 
 APM(apm)
 APP_SEARCH(app_search)

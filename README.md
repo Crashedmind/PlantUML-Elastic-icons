@@ -6,7 +6,7 @@ Sprites from [elastic](www.elastic.co) for use with PlantUML:
 
 # Using PlantUML Elastic Sprites
 
-## Demo
+## Basic Use
 
 ![](examples/S3_ELK.png)
 
@@ -25,6 +25,36 @@ Logstash -right-> ElasticSearch: Transformed Data
 ElasticSearch -right-> Kibana: Data to View
 
 ````
+
+## Add More Features
+
+![](examples/S3_ELK_Cloud.png)
+
+PlantUML source extract that creates this diagram. 
+See full source ./S3_ELK_Cloud.puml
+
+````
+AWSCLOUD(aws) {
+
+    AMAZONS3(s3_bucket,"Logs uploaded to here")
+
+package Elastic {
+
+    'add "node", "component", "agent" etc... to change background shape per https://plantuml.com/deployment-diagram
+    'default is agent 
+    ELASTIC_SEARCH(ElasticSearch, "Search and Analyze",database)
+    LOGSTASH(Logstash, "Parse and Transform",node)
+    KIBANA(Kibana, "Visualize",agent) 
+}
+
+    s3_bucket -down-> Logstash: Raw logs
+    Logstash -right-> ElasticSearch: Transformed Data
+    ElasticSearch -right-> Kibana: Data to View
+
+}
+
+````
+
 
 ## Full Sprite Set
 
@@ -99,14 +129,24 @@ mv  ./dist/elastic ../../plantuml-elastic
 
 ```
 
-# PlantUML Sprite Colors
+# Sprite Background Shape
+
+Plantuml allows setting each sprite background shape
+* default. Default set to agent for the Elastic icons which is a square.
+* when we use it by adding a third parameter e.g. "node" per KIBANA(Kibana, "Visualize",node) 
+
+This is done using the [Plantuml Deployment Diagram definitions](https://plantuml.com/deployment-diagram) where the list of options is defined.
+
+The 
+
+# Sprite Colors
 Sprites are monochrome per https://plantuml.com/sprite.
 
 Elastic icons are multi-color.
 
 It's useful to identify Elastic sprites by color (versus e.g. AWS sprites) e.g.
 * Elastic Green Background with Black Foreground
-* Elastic Green Foreground with While Background
+* Elastic Green Foreground with White Background
 
 I opted for the latter as it looked better.
 

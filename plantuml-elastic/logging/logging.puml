@@ -104,8 +104,8 @@ sprite $logging [100x100/16] {
 
 
 
-!define LOGGING(alias) PUML_ENTITY(component,00BFB3,logging,alias,logging)
+!define LOGGING(alias) PUML_ENTITY(agent,00BFB3,logging,alias,logging)
 
-!definelong LOGGING(alias,label,e_type="component",e_color="00BFB3",e_stereo="logging",e_sprite="logging")
+!definelong LOGGING(alias,label,e_type="agent",e_color="00BFB3",e_stereo="logging",e_sprite="logging")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
